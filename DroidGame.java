@@ -391,8 +391,7 @@ private void gerakDroidMerah() {
 private double heuristicCost(Point start, Point goal) {
     return Math.abs(start.x - goal.x) + Math.abs(start.y - goal.y);
 }
-
-
+    
 private void gerakDroidHijau() {
     int[][] jarak = new int[BARIS][KOLOM];
     Queue<Point> queue = new LinkedList<>();
@@ -443,7 +442,7 @@ private void gerakDroidHijau() {
         kolom += pergeseranKolom[gerakanTerbaik];
     }
 }
-
+    
     private boolean gerakanValid(int baris, int kolom) {
         if (baris >= 0 && baris < BARIS && kolom >= 0 && kolom < KOLOM && peta[baris][kolom] == 0) {
             return true;
@@ -451,7 +450,6 @@ private void gerakDroidHijau() {
 
         return false;
     }
-
 }
 
 @Override
